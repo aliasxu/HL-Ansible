@@ -1,0 +1,10 @@
+---
+ # install zabbix agentd
+ 
+- name: Install zabbix-agentd
+  hosts: zabbix-agentd
+  remote_user: root
+  
+  
+  roles:
+	- zabbix-agentd
