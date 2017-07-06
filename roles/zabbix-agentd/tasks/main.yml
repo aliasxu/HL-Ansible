@@ -1,0 +1,8 @@
+- name: copy zabbix_tar_gz to client
+  copy: src=zabbix.tar.gz dest=/tmp/zabbix.tar.gz
+  
+- name: copy install_shell to client
+  copy: src=install_zabbix.sh dest=/tmp/install_zabbix.sh
+  
+- name: install zabbix
+  shell: /bin/bash /tmp/install_zabbix.sh
